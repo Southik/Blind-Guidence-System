@@ -7,16 +7,16 @@ Blind Guidance System is an assistive-navigation prototype for iPhone. It combin
 
 ## App preview
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/a1ac6459-3087-449d-bb72-badf6973be07" width="210" />
-  <img src="https://github.com/user-attachments/assets/cd5f2270-7c49-4b0b-859f-cbe033600660" width="210" />
-  <img src="https://github.com/user-attachments/assets/99d346d3-1fe4-42c4-9298-8600d320cfba" width="210" />
-  <img src="https://github.com/user-attachments/assets/f12398af-5c1b-4288-b25d-22a41e524018" width="210" />
+  <img src="https://github.com/user-attachments/assets/a1ac6459-3087-449d-bb72-badf6973be07" width="180" />
+  <img src="https://github.com/user-attachments/assets/cd5f2270-7c49-4b0b-859f-cbe033600660" width="180" />
+  <img src="https://github.com/user-attachments/assets/99d346d3-1fe4-42c4-9298-8600d320cfba" width="180" />
+  <img src="https://github.com/user-attachments/assets/f12398af-5c1b-4288-b25d-22a41e524018" width="180" />
 </p>
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/55ffc01e-6bc4-491f-81c9-7e49dc259d23" width="210" />
-  <img src="https://github.com/user-attachments/assets/17a6e6e2-dc67-4a1b-94d8-d20730ae43c0" width="210" />
-  <img src="https://github.com/user-attachments/assets/b7fc590c-3022-4d9d-bb20-110647d50920" width="210" />
-  <img src="https://github.com/user-attachments/assets/ce0feef9-40c6-44ba-b0c0-9e9f983d6ced" width="210" />
+  <img src="https://github.com/user-attachments/assets/55ffc01e-6bc4-491f-81c9-7e49dc259d23" width="180" />
+  <img src="https://github.com/user-attachments/assets/17a6e6e2-dc67-4a1b-94d8-d20730ae43c0" width="180" />
+  <img src="https://github.com/user-attachments/assets/b7fc590c-3022-4d9d-bb20-110647d50920" width="180" />
+  <img src="https://github.com/user-attachments/assets/ce0feef9-40c6-44ba-b0c0-9e9f983d6ced" width="180" />
 </p>
 ## What it does
 
