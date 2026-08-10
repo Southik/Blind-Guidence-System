@@ -1,4 +1,3 @@
-# Blind-Guidence-System
 # Blind Guidance System
 
 Blind Guidance System is an assistive-navigation prototype for iPhone. It combines the phone's camera, depth sensing, AR mapping, and a local Python computer-vision server to identify walkable space and nearby obstacles. The app returns an annotated live camera view, produces directional audio cues, supports indoor LiDAR mesh scans, and includes quick-access location and emergency-simulation tools.
