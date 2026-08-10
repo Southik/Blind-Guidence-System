@@ -7,37 +7,7 @@ Blind Guidance System is an assistive-navigation prototype for iPhone. It combin
 
 ## App preview
 
-```text
-┌──────────────────────────────────────────────────────────────────────────┐
-│ PLACE APP SCREENSHOT: Live Guidance                                      │
-│ Suggested file: docs/images/live-guidance.png                             │
-│ Show: camera view, green walkable area, red route, obstacle labels, HUD. │
-└──────────────────────────────────────────────────────────────────────────┘
-```
-
-```text
-┌──────────────────────────────────────────────────────────────────────────┐
-│ PLACE APP SCREENSHOT: LiDAR Scan / 3D Map                                │
-│ Suggested file: docs/images/lidar-scan.png                                │
-│ Show: scanning controls or a saved environment mesh.                      │
-└──────────────────────────────────────────────────────────────────────────┘
-```
-
-```text
-┌──────────────────────────────────────────────────────────────────────────┐
-│ PLACE APP SCREENSHOT: Draw Valid Paths on 3D Map                          │
-│ Suggested file: docs/images/map-path-annotation.png                       │
-│ Show: top-down mesh with user-drawn red valid-path corridors.             │
-└──────────────────────────────────────────────────────────────────────────┘
-```
-
-```text
-┌──────────────────────────────────────────────────────────────────────────┐
-│ PLACE APP SCREENSHOT: Quick Assist or Settings                            │
-│ Suggested file: docs/images/quick-assist.png                              │
-│ Show: location, emergency simulation, or server settings.                 │
-└──────────────────────────────────────────────────────────────────────────┘
-```
+<img width="735" height="1600" alt="image" src="https://github.com/user-attachments/assets/a1ac6459-3087-449d-bb72-badf6973be07" />
 
 ## What it does
 
