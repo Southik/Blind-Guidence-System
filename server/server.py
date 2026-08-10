@@ -1,4 +1,4 @@
-# SERVER URL: ws://192.168.2.109:8765 (ipconfig getifaddr en0)
+# SERVER URL: ws://192.__.__.__:8765 (ipconfig getifaddr en0)
 import os
 import time
 
@@ -27,9 +27,6 @@ from ultralytics import YOLO
 from transformers import SegformerForSemanticSegmentation
 
 
-# =============================================================================
-# PERFORMANCE CONFIG
-# =============================================================================
 PROC_W = 240
 PROC_H = 320
 SEG_SIZE = 224                    # SegFormer input resolution
@@ -55,10 +52,6 @@ LARGE_OBSTACLE_CLASSES = {
     "refrigerator", "potted plant", "suitcase", "bench"
 }
 
-
-# =============================================================================
-# HARDWARE
-# =============================================================================
 if torch.cuda.is_available():
     device = torch.device("cuda")
     use_fp16 = True
@@ -76,9 +69,7 @@ if torch.cuda.is_available():
 print(f"🚀 High-FPS Panoptic Navigation Engine: {device} (FP16={use_fp16})")
 
 
-# =============================================================================
 # AUDIO ENGINE
-# =============================================================================
 pygame.mixer.pre_init(
     frequency=SAMPLE_RATE,
     size=-16,
@@ -368,9 +359,8 @@ def announce_obstacles_if_needed(obstacles, image_width):
     queue_voice(f"Multiple obstacles ahead. {description}.", priority=1)
 
 
-# =============================================================================
 # MODEL SETUP
-# =============================================================================
+
 SEGFORMER_NAME = "nvidia/segformer-b0-finetuned-ade-512-512"
 
 segformer_model = (
@@ -388,7 +378,6 @@ GROUND_CLASSES = torch.tensor([3, 11, 29], device=device)
 yolo_model = YOLO("yolo11n-seg.pt")
 yolo_model.to(device)
 
-# Warm up models
 try:
     dummy = np.zeros((PROC_H, PROC_W, 3), dtype=np.uint8)
     yolo_model(
@@ -413,9 +402,7 @@ except Exception as exc:
     print(f"⚠️ SegFormer warm-up skipped: {exc}")
 
 
-# =============================================================================
 # PATHFINDING
-# =============================================================================
 PREV_PRIMARY_PATH = None
 CACHED_GROUND_MASK_SMALL = None
 FRAME_COUNTER = 0
@@ -624,9 +611,7 @@ def draw_paths_overlay(frame, all_paths, scale_x, scale_y):
     )
 
 
-# =============================================================================
 # INFERENCE HELPERS
-# =============================================================================
 def run_segmentation(frame_portrait):
     small_seg_input = cv2.resize(
         frame_portrait,
@@ -706,9 +691,7 @@ def decode_depth(data, proc_w, proc_h):
         return None
 
 
-# =============================================================================
 # FRAME PROCESSING
-# =============================================================================
 def process_single_frame(data):
     global PREV_PRIMARY_PATH
     global CACHED_GROUND_MASK_SMALL
@@ -764,9 +747,7 @@ def process_single_frame(data):
 
     ground_mask = CACHED_GROUND_MASK_SMALL.copy()
 
-    # -------------------------------------------------------------------------
     # GROUND TRUTH RED-LINE ANNOTATION FUSION
-    # -------------------------------------------------------------------------
     normalized_lines = data.get("normalized_lines", [])
     if normalized_lines:
         annotation_mask = np.zeros((PROC_H, PROC_W), dtype=np.uint8)
@@ -980,9 +961,7 @@ def process_single_frame(data):
     }
 
 
-# =============================================================================
 # ASYNC WEBSOCKET SERVER
-# =============================================================================
 async def process_frame(websocket):
     global PREV_PRIMARY_PATH
     global LAST_AUDIO_TIME
