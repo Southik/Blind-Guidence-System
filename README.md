@@ -18,6 +18,7 @@ Blind Guidance System is an assistive-navigation prototype for iPhone. It combin
   <img src="https://github.com/user-attachments/assets/b7fc590c-3022-4d9d-bb20-110647d50920" width="180" />
   <img src="https://github.com/user-attachments/assets/ce0feef9-40c6-44ba-b0c0-9e9f983d6ced" width="180" />
 </p>
+
 ## What it does
 
 - Streams camera frames and LiDAR depth data from the iOS app to a computer on the same network.
